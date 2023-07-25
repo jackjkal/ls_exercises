@@ -1,5 +1,5 @@
-def stringy(number)
-  string = '1'
+def stringy(number, start = 1)
+  string = start.to_s
 
   while string.length < number
     string << (string.end_with?('1') ? '0' : '1')
